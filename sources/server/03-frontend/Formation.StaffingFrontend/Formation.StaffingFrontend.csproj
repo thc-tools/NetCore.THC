@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\01-dal\Formation.Model\Formation.Model.csproj" />
+    <ProjectReference Include="..\..\01-dal\Formation.Queries\Formation.Queries.csproj" />
+    <ProjectReference Include="..\..\02-business\01-referentiel\Formation.ReferentielContract\Formation.ReferentielContract.csproj" />
+    <ProjectReference Include="..\..\02-business\01-referentiel\Formation.ReferentielImplementation\Formation.ReferentielImplementation.csproj" />
+  </ItemGroup>
+
+</Project>
